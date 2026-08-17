@@ -1,0 +1,26 @@
+name: Daily Article Publisher (No API)
+
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish one scheduled article
+        run: python3 scripts/publish_daily.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "LearningDigitalMarketing Bot"
+          git config user.email "hello.learningdigitalmarketing@gmail.com"
+          git add scheduled articles sitemap.xml
+          git diff --cached --quiet || (git commit -m "Publish daily article" && git push)
