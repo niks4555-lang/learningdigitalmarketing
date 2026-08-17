@@ -22,5 +22,5 @@ jobs:
         run: |
           git config user.name "LearningDigitalMarketing Bot"
           git config user.email "hello.learningdigitalmarketing@gmail.com"
-          git add scheduled articles sitemap.xml
+          git add -A
           git diff --cached --quiet || (git commit -m "Publish daily article" && git push)
