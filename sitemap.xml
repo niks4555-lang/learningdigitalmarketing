@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url><loc>https://learningdigitalmarketing.online/</loc></url>
   <url><loc>https://learningdigitalmarketing.online/articles/</loc></url>
   <url><loc>https://learningdigitalmarketing.online/privacy.html</loc></url>
   <url><loc>https://learningdigitalmarketing.online/affiliate-disclosure.html</loc></url>
   <url><loc>https://learningdigitalmarketing.online/terms.html</loc></url>
+  <url><loc>https://learningdigitalmarketing.online/articles/31-digital-marketing-trends-2026.html</loc></url>
   <url><loc>https://learningdigitalmarketing.online/articles/01-what-is-digital-marketing.html</loc></url>
 </urlset>
